@@ -4,6 +4,8 @@ class Simulation:
     # and the requested future date on which to make the prediction.
     def weather(self, location, days):
 
+        if (days < 0): return "Unable to calculate a result.";
+        
         # Our list of possible weather, as an array.
         possible_weather = ["sun", "wind", "rain", "snow", "cloud"];
 
